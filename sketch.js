@@ -808,7 +808,7 @@ if(backgroundMusic.isPlaying() == true){
 
 
       //EFFECT
-      var o = createSprite(1364, random(height), 30, 30);
+      var o = createSprite(windowWidth, random(height), 30, 30);
       o.addAnimation('normal', 'Cyclomatus1.png', 'Cyclomatus2.png', 'Cyclomatus3.png', 'Cyclomatus4.png');
       o.setSpeed(5,180)
 
