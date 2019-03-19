@@ -15,6 +15,9 @@ let mySoundC2;
 let mySoundC3;
 let mySoundC4;
 
+let buttonA1
+let buttonA2
+
 /* rotation effect
 var aX;
 var aY;
@@ -37,7 +40,6 @@ var GRAVITY = 0.05;
 
 //______________________________________________________________________
 
-
 let started = false;
  
 //______________________________________________________________________
@@ -48,8 +50,6 @@ var bb = 255;
 //______________________________________________________________________
 
 var credits = false;
-
-var buttonA1
 
 
 function preload(){
@@ -158,8 +158,6 @@ function setup() {
  aX = 0;
  aY = 0;
  aR = 0;
-
-
 
  
 //______________________________________________________________________
@@ -289,45 +287,164 @@ for(var n=0; n<allSprites.length; n++){
 
 }else{
   background(br, bg, bb);
-  if(played[0] == true){
-    text("A1 Isophya", width/2, 140);
+
+  if(played[0] == true){ 
+    fill(255, 255, 255);
+    text("Isophya", width/2, height/2-140);
+
+      buttonA1 = createButton('more info');
+      buttonA1.position(width/2-80, height/2-150);
+      buttonA1.mousePressed(myFunctionA1);
+
+       function myFunctionA1() {
+        window.open("http://bio.acousti.ca/content/isophya-modestior");
+      }
+    
     }
 
   if(played[1] == true){
-    text("A2 Aphrodes biconictus", width/2, 160);
+    text("Aphrodes biconictus", width/2, height/2-120);
+
+      buttonA2 = createButton('more info');
+      buttonA2.position(width/2-80, height/2-130);
+      buttonA2.mousePressed(myFunctionA2);
+
+       function myFunctionA2() {
+        window.open("http://bio.acousti.ca/content/aphrodes-biconictus-male");
+      }
+
   }
    if(played[2] == true){
-    text("A3 Myopsalta", width/2, 180);
+    text("Myopsalta", width/2, height/2-100);
+
+      buttonA3 = createButton('more info');
+      buttonA3.position(width/2-80, height/2-110);
+      buttonA3.mousePressed(myFunctionA3);
+
+       function myFunctionA3() {
+        window.open("http://bio.acousti.ca/search/site/Myopsalta");
+      }
+
   }
+
    if(played[3] == true){
-    text("A4 Isophya", width/2, 200);
+    text("Isophya", width/2, height/2-80);
+
+      buttonA4 = createButton('more info');
+      buttonA4.position(width/2-80, height/2-90);
+      buttonA4.mousePressed(myFunctionA4);
+
+       function myFunctionA4() {
+        window.open("http://bio.acousti.ca/content/isophya-beybienkoi");
+      }
+
   }
+
    if(played[4] == true){
-    text("B1 Arphia pseudonetanaCrepitation", width/2, 220);
+    text("Arphia pseudonetanaCrepitation", width/2, height/2-60);
+
+      buttonB1 = createButton('more info');
+      buttonB1.position(width/2-80, height/2-70);
+      buttonB1.mousePressed(myFunctionB1);
+
+       function myFunctionB1() {
+        window.open("http://bio.acousti.ca/classification/arphia-pseudonietana");
+      }
+
   }
+
    if(played[5] == true){
-    text("B2 Myopsalta", width/2, 240);
+    text("Myopsalta", width/2, height/2-40);
+
+      buttonB2 = createButton('more info');
+      buttonB2.position(width/2-80, height/2-50);
+      buttonB2.mousePressed(myFunctionB2);
+
+       function myFunctionB2() {
+        window.open("http://bio.acousti.ca/classification/myopsalta");
+      }
+
   }
+
    if(played[6] == true){
-    text("B3 Arphia pseudonetanaCrepitation", width/2, 260);
+    text("Arphia pseudonetanaCrepitation", width/2, height/2-20);
+
+      buttonB3 = createButton('more info');
+      buttonB3.position(width/2-80, height/2-30);
+      buttonB3.mousePressed(myFunctionB3);
+
+       function myFunctionB3() {
+        window.open("http://bio.acousti.ca/classification/arphia-pseudonietana");
+      }
+
   }
+
    if(played[7] == true){
-    text("B4 Idiocerus fulgidus", width/2, 280);
+    text("Idiocerus fulgidus", width/2, height/2);
+
+      buttonB4 = createButton('more info');
+      buttonB4.position(width/2-80, height/2-10);
+      buttonB4.mousePressed(myFunctionB4);
+
+       function myFunctionB4() {
+        window.open("http://bio.acousti.ca/content/idiocerus-fulgidus-male");
+      }
+
   }
+
    if(played[8] == true){
-    text("C1 Aphrophora alni", width/2, 300);
+    text("Aphrophora alni", width/2, height/2+20);
+
+      buttonC1 = createButton('more info');
+      buttonC1.position(width/2-80, height/2+10);
+      buttonC1.mousePressed(myFunctionC1);
+
+       function myFunctionC1() {
+        window.open("http://bio.acousti.ca/content/aphrophora-alni-female");
+      }
+
   }
+
    if(played[9] == true){
-    text("C2 Stauroderus scalaris", width/2, 320);
+    text("Stauroderus scalaris", width/2, height/2+40);
+
+      buttonC2 = createButton('more info');
+      buttonC2.position(width/2-80, height/2+30);
+      buttonC2.mousePressed(myFunctionC2);
+
+       function myFunctionC2() {
+        window.open("http://bio.acousti.ca/content/5668stauroderus-scalaris");
+      }
+
   }
+
    if(played[10] == true){
-    text("C3 Aphrodes biconictus", width/2, 340);
+    text("Aphrodes biconictus", width/2, height/2+60);
+
+      buttonC3 = createButton('more info');
+      buttonC3.position(width/2-80, height/2+50);
+      buttonC3.mousePressed(myFunctionC3);
+
+       function myFunctionC3() {
+        window.open("http://bio.acousti.ca/content/aphrodes-biconictus-male");
+      }
   }
+
    if(played[11] == true){
-    text("C4 Isophya_modestior", width/2, 360);
+    text("Isophya modestior", width/2, height/2+80);
+
+      buttonC4 = createButton('more info');
+      buttonC4.position(width/2-80, height/2+70);
+      buttonC4.mousePressed(myFunctionC4);
+
+       function myFunctionC4() {
+        window.open("http://bio.acousti.ca/content/isophya-modestior");
+      }
+
   }
 
 }
+
 
 }
     
@@ -351,9 +468,9 @@ if(backgroundMusic.isPlaying() == true){
         played[0] = true;
 
           //BACKGROUND
-          br = random(0, 225);
-          bg = random(0, 225);
-          bb = random(0, 225);
+          br = random(0, 255);
+          bg = random(0, 255);
+          bb = random(0, 255);
 
         //EFFECT
 
@@ -836,7 +953,7 @@ if(backgroundMusic.isPlaying() == true){
           bb = random(0, 225);
 
       //EFFECT
-      var q = createSprit(random(width), random(height), 30, 30);
+      var q = createSprite(random(width), random(height), 30, 30);
       q.addAnimation('normal', 'Layer1.png', 'Layer1.png');
       //if no image or animation is associated it will be a rectangle of the specified size
       //and a random color
