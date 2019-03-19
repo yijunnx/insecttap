@@ -287,9 +287,9 @@ for(var n=0; n<allSprites.length; n++){
 
 }else{
   background(br, bg, bb);
+ fill(255, 255, 255);
 
   if(played[0] == true){ 
-    fill(255, 255, 255);
     text("Isophya", width/2, height/2-140);
 
       buttonA1 = createButton('more info');
