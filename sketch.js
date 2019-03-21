@@ -288,6 +288,7 @@ for(var n=0; n<allSprites.length; n++){
 }else{
   background(br, bg, bb);
  fill(255, 255, 255);
+ text("Credit Musicians", width/2, height/2-160);
 
   if(played[0] == true){ 
     text("Isophya", width/2, height/2-140);
